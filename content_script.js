@@ -23,12 +23,16 @@ function replaceText(v)
 {
  
     // Poker needs to change
-    v = v.replace(/\bPoker\b/g, "Pool");
-    v = v.replace(/\bpoker\b/g, "pool");
+    v = v.replace(/\bPoker\b/g, "Po0ol");
+    v = v.replace(/\bpoker\b/g, "po0ol");
 
     // Pool needs to change
     v = v.replace(/\bPool\b/g, "Poker");
     v = v.replace(/\bpool\b/g, "poker");
+  
+    // Poker needs to change, continued
+    v = v.replace(/\bPo0ol\b/g, "Pool");
+    v = v.replace(/\bpo0ol\b/g, "pool");
 
 
     return v;
